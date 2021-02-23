@@ -5,7 +5,6 @@ public class StudentSearch {
 
         if (students.size() == 0) {
             throw new Exception("Students array should not be empty!");
-
         }
         for (Student student: students)
             if (student.getId().equals(id))
