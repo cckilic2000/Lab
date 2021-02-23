@@ -13,3 +13,17 @@ public class StudentSearch {
         return false;
     }
 }
+
+//comment to commit 
+public ArrayList<Student> findAll(ArrayList<Student> students, String name) throws
+Exception {
+ArrayList<Student> result = new ArrayList<Student>();
+for (Student student: students)
+if (student.getName().equals(name)) {
+result.add(student);
+}
+if (result.isEmpty()) {
+throw new Exception("There is no student with the given name!");
+}
+return result;
+} 
